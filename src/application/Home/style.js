@@ -16,6 +16,14 @@ export const Tab = styled.div`
   a {
       flex: 1;
       padding: 2px 0;
+      &.selected{
+        span {
+            padding: 3px 0;
+            font-weight: 700;
+            color: #f1f1f1;
+            border-bottom: 2px solid #f1f1f1;
+        }
+      }
   }
 `
 
