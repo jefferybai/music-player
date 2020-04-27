@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { SliderContainer } from './style';
 import "swiper/css/swiper.css";
 import Swiper from "swiper";
@@ -7,7 +7,6 @@ import Swiper from "swiper";
 function Slider(props) {
   const [sliderSwiper, setSliderSwiper] = useState(null);
   const { bannerList } = props;
-
   useEffect(() => {
     if (bannerList.length && !sliderSwiper) {
       let newSliderSwiper = new Swiper(".slider-container", {
@@ -24,6 +23,7 @@ function Slider(props) {
 
   return (
     <SliderContainer>
+      <div className="before"></div>
       <div className="slider-container">
         <div className="swiper-wrapper">
           {

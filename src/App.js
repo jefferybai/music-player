@@ -17,7 +17,6 @@ function App() {
         <div className="App">
           <GlobalStyle></GlobalStyle>
           <IconStyle></IconStyle>
-          <i className="iconfont">&#xe62b;</i>
         </div>
         {renderRoutes(routes)}
       </HashRouter>
